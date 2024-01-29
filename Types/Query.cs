@@ -1,4 +1,4 @@
-namespace GraphQlTestServer.Types;
+namespace GraphQLTestServer.Types;
 
 [QueryType]
 public static class Query
