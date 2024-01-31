@@ -1,3 +1,3 @@
 namespace GraphQLTestServer.Types;
 
-public record Author(string Name);
+public record Author(string Name) : IUser;
