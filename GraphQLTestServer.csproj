@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
@@ -7,15 +7,18 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>ccb90d1a-809d-478f-a8fa-966d4fbba118</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="HotChocolate.AspNetCore" Version="13.8.1" />
+    <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="13.8.1" />
     <PackageReference Include="HotChocolate.AspNetCore.CommandLine" Version="13.8.1" />
     <PackageReference Include="HotChocolate.Types.Analyzers" Version="13.8.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
   </ItemGroup>
 
 </Project>
